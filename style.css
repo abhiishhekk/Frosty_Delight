@@ -1,4 +1,24 @@
+#preloader{
+  position: fixed;
+  background: url(preloader2.gif) no-repeat center center;
+  z-index: 100;
+  background-size: cover;
+  height:100vh;
+  width:100vw;
+  margin-right: -35px;
+  margin-top: -30px;
+  margin-bottom: -15px;
+  margin-left: -20px;
 
+  animation: fadeout 3s ease infinite;
+  -webkit-animation: fadeout 3s ease infinite;
+  -moz-animation: fadeout 3s ease infinite;
+  -o-animation: fadeout 3s ease infinite;
+  -ms-animation: fadeout 3s ease infinite;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+
+}
 body{
     /* background-image: url("Picsart_24-04-11_01-16-22-771.png"); */
     /* background-color: #d57b1b; */
@@ -131,28 +151,28 @@ body{
 }
 
 /* fad in image animation*/
-@keyframes fadeIn{
-  0% {opacity:0;}
-  100% {opacity:1;}
+@keyframes fadeout{
+  0% {opacity:1;}
+  100% {opacity:0;}
 }
-@-moz-keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-@-webkit-keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+@-moz-keyframes fadeout {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
 }
 
-@-o-keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+@-webkit-keyframes fadeout {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
 }
 
-@-ms-keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+@-o-keyframes fadeout {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@-ms-keyframes fadeout {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
 }
 
 /* border radius animation */
@@ -650,7 +670,7 @@ https://github.com/robole/title-sequences
 .word {
   display: block;
 
-  animation: show 0.01s forwards, pop-word 1.5s forwards;
+  animation: show 0.01s forwards, pop-word 3.5s forwards;
   animation-timing-function: cubic-bezier(0.14, 1.23, 0.33, 1.16);
   opacity: 0;
 
@@ -661,14 +681,14 @@ https://github.com/robole/title-sequences
 .word:nth-of-type(2) {
   padding: 0 2rem;
 
-  animation-delay: 1.5s;
+  animation-delay: 2.7s;
 
   color: gold;
 }
 
 .superscript {
   position: relative;
-  animation-delay: 3.6s;
+  animation-delay: 10s;
 
   animation-duration: 0.25s;
   animation-name: shimmer;
@@ -687,7 +707,7 @@ https://github.com/robole/title-sequences
   width: 14%;
   height: 48%;
 
-  animation: bar-scale 0.25s linear 3s 1 forwards;
+  animation: bar-scale 0.25s linear 4.5s 1 forwards;
 
   background: linear-gradient(
     to right,
@@ -713,7 +733,7 @@ https://github.com/robole/title-sequences
   width: var(--size);
   height: var(--size);
 
-  animation: sparkle 0.4s linear 3.5s 1 forwards;
+  animation: sparkle 0.4s linear 5s 1 forwards;
 
   background: radial-gradient(
       circle at center,
