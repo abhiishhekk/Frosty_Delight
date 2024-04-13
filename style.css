@@ -3,7 +3,7 @@ body{
     /* background-color: #d57b1b; */
     display: grid;
     height: 100vh;
-    background-color: #c20892;
+    background-color: #392510;
     place-items: center;
 
 }
@@ -39,7 +39,7 @@ body{
   right:0;
   overflow-x:hidden;
   padding-top:80px;
-  background-color: #392510; 
+  background-color: #5C4033; 
   padding-left: 10px;
   font-family: "Teko", sans-serif;
   font-size:20px;
